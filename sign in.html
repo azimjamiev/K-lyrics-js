@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTS & BLACKPINK Sign In</title>
+
+<style>
+/* BODY + BACKGROUND */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#ff0080,#6a00ff,#000000,#00ffff);
+    background-size:400% 400%;
+    animation:bgmove 15s infinite alternate;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+}
+
+@keyframes bgmove{
+    0%{background-position:left;}
+    100%{background-position:right;}
+}
+
+/* BACK BUTTON */
+.back-btn{
+    display:inline-block;
+    margin:20px;
+    padding:10px 20px;
+    background:linear-gradient(45deg,#ff1493,#7b00ff);
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+    box-shadow:0 0 15px #ff1493;
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:10;
+}
+
+.back-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 25px #ff1493,0 0 35px #7b00ff;
+}
+
+/* FORM BOX */
+.form-box{
+    background:rgba(0,0,0,0.8);
+    padding:35px;
+    width:350px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(255,20,147,0.5);
+}
+
+/* LOGO */
+.logo{
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:10px;
+    text-shadow:0 0 10px #ff1493,0 0 20px #6a00ff;
+}
+
+/* HEADING */
+h2{
+    margin-bottom:20px;
+    color:#ff1493;
+    text-shadow:0 0 10px #6a00ff;
+}
+
+/* INPUT + SELECT */
+input, select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    font-size:14px;
+    box-shadow:0 0 8px rgba(255,20,147,0.7);
+    background:rgba(255,255,255,0.05);
+    color:white;
+}
+
+/* PLACEHOLDER COLOR */
+input::placeholder, select option{
+    color: rgba(255,255,255,0.7);
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:linear-gradient(45deg,#ff1493,#6a00ff);
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    box-shadow:0 0 15px #ff1493,0 0 25px #6a00ff;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px #ff1493,0 0 35px #6a00ff,0 0 45px cyan;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:400px){
+    .form-box{
+        width:90%;
+        padding:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-btn">⬅ Go Back</a>
+<nav>
+  <a href="index.html">Menu</a>
+  <a href="sign in.html">Sign in</a>
+  <a href="bts.html">BTS</a>
+  <a href="BABYMONSTER.html">BABYMONSTER</a>
+  <a href="table.html">KESTE</a>
+</nav>
+<div class="form-box">
+
+<div class="logo">BTS 💜 | BLACKPINK 🖤💗 | BABYMONSTER ❤️</div>
+
+<h2>Sign In</h2>
+
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email" required>
+<input type="text" placeholder="Address (Manzil)" required>
+<input type="tel" placeholder="Phone Number" required>
+<select required>
+<option value="">Country (Mamleket)</option>
+<option>Uzbekistan</option>
+<option>Kazakhstan</option>
+<option>South Korea</option>
+<option>USA</option>
+<option>Other</option>
+</select>
+<button type="submit">Register</button>
+</form>
+</div>
+
+</body>
+</html>

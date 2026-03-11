@@ -1,0 +1,142 @@
+body{
+  margin:0;
+  font-family:'Arial',sans-serif;
+  background:linear-gradient(135deg,#ff0080,#7b00ff,#00c3ff);
+  color:white;
+  text-align:center;
+}
+@media(max-width:500px){
+  body{
+  margin:0;
+  font-family:'Arial',sans-serif;
+  background:linear-gradient(135deg,#ff0080,#7b00ff,#00c3ff);
+  color:white;
+  text-align:center;
+}
+ .lyrics{
+    flex-direction:column;
+  }
+}
+
+
+/* TITLE */
+h1{
+  margin:40px;
+  font-size:45px;
+  letter-spacing:2px;
+  text-shadow:0 0 20px #ff00cc,0 0 40px #00ffff;
+}
+
+
+nav{
+  background:rgba(0,0,0,0.85);
+  padding:15px 0;
+  box-shadow:0 0 20px #ff00cc;
+}
+
+nav a{
+  color:white;
+  margin:0 20px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00ffff;
+  text-shadow:0 0 10px cyan,0 0 20px #ff00cc;
+}
+
+/* SONG BLOCK */
+.song{
+  width:80%;
+  margin:40px auto;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 0 25px #ff00cc;
+  text-align:left;
+  background:rgba(0,0,0,0.75);
+}
+
+/* GROUP BACKGROUNDS */
+.song.bts{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+  url("bts.jpg");
+  background-size:cover;
+  box-shadow:0 0 25px purple;
+}
+
+.song.blackpink{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+  url("blackpink.jpg");
+  background-size:cover;
+  box-shadow:0 0 25px hotpink;
+}
+
+.song.babymonster{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+  url("babymonster.jpg");
+  background-size:cover;
+  box-shadow:0 0 25px #00ffff;
+}
+
+/* LYRICS */
+.lyrics{
+  display:flex;
+  gap:30px;
+}
+
+.original,.translation{
+  flex:1;
+  padding:20px;
+  background:rgba(255,255,255,0.05);
+  border-radius:10px;
+}
+
+.translation{
+  color:#00ffff;
+  font-style:italic;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+  margin:30px auto;
+  width:90%;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:15px;
+  box-shadow:0 0 20px #00ffff;
+  transition:0.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.1) rotate(2deg);
+  box-shadow:0 0 30px #ff00cc;
+}
+
+
+
+
+.back-btn{
+  display:inline-block;
+  margin:20px;
+  padding:10px 20px;
+  background:linear-gradient(45deg,#ff1493,#7b00ff);
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+  transition:0.3s;
+  box-shadow:0 0 15px #ff1493;
+}
+
+.back-btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 25px #ff1493,0 0 35px #7b00ff;
+}
